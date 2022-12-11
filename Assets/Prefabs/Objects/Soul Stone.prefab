@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 2690021679732229193}
   - component: {fileID: 2690021679727667245}
   m_Layer: 0
-  m_Name: Stone
-  m_TagString: Untagged
+  m_Name: Soul Stone
+  m_TagString: Soul Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
