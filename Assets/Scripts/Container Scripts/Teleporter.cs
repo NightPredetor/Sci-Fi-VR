@@ -7,6 +7,7 @@ public class Teleporter : ParticleSpawner
     #region Serialized Fields
     [SerializeField] Transform teleportPosition;
     [SerializeField] Rigidbody playerRigidbody;
+    [SerializeField] float teleportDelay;
     #endregion
 
     #region MonoBehaviour
@@ -14,10 +15,19 @@ public class Teleporter : ParticleSpawner
     {
         if (other.CompareTag("Soul Stone"))
         {
-            ShowMessage();
-
-            playerRigidbody.MovePosition(teleportPosition.position);
+            StartCoroutine(Teleport());
         }
+    }
+    #endregion
+
+    #region Private Methods
+    private IEnumerator Teleport()
+    {
+        ShowMessage();
+
+        yield return new WaitForSeconds(teleportDelay);
+
+        playerRigidbody.MovePosition(teleportPosition.position);
     }
     #endregion
 }

@@ -109,3 +109,4 @@ MonoBehaviour:
   message: You have dropped in box C.
   teleportPosition: {fileID: 0}
   playerRigidbody: {fileID: 0}
+  teleportDelay: 0.4
