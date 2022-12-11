@@ -5,8 +5,12 @@ using UnityEngine;
 public class Teleporter : ParticleSpawner
 {
     #region Serialized Fields
-    [SerializeField] Transform teleportPosition;
+    [Header("Teleporter References")]
+    [SerializeField] GameObject canvasObj;
     [SerializeField] Rigidbody playerRigidbody;
+
+    [Header("Teleporter Configurations")]
+    [SerializeField] Transform teleportPosition;
     [SerializeField] float teleportDelay;
     #endregion
 
@@ -15,6 +19,8 @@ public class Teleporter : ParticleSpawner
     {
         if (other.CompareTag("Soul Stone"))
         {
+            ShowMessage();
+
             StartCoroutine(Teleport());
         }
     }
@@ -23,10 +29,9 @@ public class Teleporter : ParticleSpawner
     #region Private Methods
     private IEnumerator Teleport()
     {
-        ShowMessage();
-
         yield return new WaitForSeconds(teleportDelay);
 
+        canvasObj.SetActive(true);
         playerRigidbody.MovePosition(teleportPosition.position);
     }
     #endregion

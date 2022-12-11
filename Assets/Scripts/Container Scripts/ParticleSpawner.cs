@@ -6,7 +6,10 @@ using TMPro;
 public class ParticleSpawner : MonoBehaviour
 {
     #region Serialized Fields
+    [Header("Particle References")]
     [SerializeField] protected ParticleSystem particleObj;
+
+    [Header("Text References")]
     [SerializeField] protected TextMeshPro text;
     [SerializeField] protected string message;
     #endregion

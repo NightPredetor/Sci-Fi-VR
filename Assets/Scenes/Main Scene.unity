@@ -3588,7 +3588,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073771057}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 6.02}
+  m_LocalPosition: {x: 0, y: 0, z: 11.77}
   m_LocalScale: {x: 0.05, y: 0.03, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3598,7 +3598,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.25, y: 2.13}
+  m_AnchoredPosition: {x: 3.25, y: 2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2073771062
@@ -3797,6 +3797,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3926970874402124403, guid: 7a2505f6dd7edc1429aec1461a2456f0,
+        type: 3}
+      propertyPath: canvasObj
+      value: 
+      objectReference: {fileID: 2073771057}
     - target: {fileID: 3926970874402124403, guid: 7a2505f6dd7edc1429aec1461a2456f0,
         type: 3}
       propertyPath: playerRigidbody
