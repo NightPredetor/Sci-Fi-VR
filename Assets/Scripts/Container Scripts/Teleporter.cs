@@ -14,8 +14,8 @@ public class Teleporter : ParticleSpawner
     {
         if (other.CompareTag("Soul Stone"))
         {
-            // TODO: Teleport Logic.
-            particleObj.Play();
+            ShowMessage();
+
             playerRigidbody.MovePosition(teleportPosition.position);
         }
     }

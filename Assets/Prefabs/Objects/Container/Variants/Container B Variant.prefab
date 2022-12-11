@@ -69,6 +69,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db6c5fcf38c0a8d4b8b94a7f85aeab53, type: 3}
+--- !u!114 &781515395121644659 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 363705711699400265, guid: db6c5fcf38c0a8d4b8b94a7f85aeab53,
+    type: 3}
+  m_PrefabInstance: {fileID: 1140717434695979578}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5962286651800329238 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6731448127602724396, guid: db6c5fcf38c0a8d4b8b94a7f85aeab53,
@@ -88,3 +100,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particleObj: {fileID: 0}
+  text: {fileID: 781515395121644659}
+  message: You have dropped in box B.

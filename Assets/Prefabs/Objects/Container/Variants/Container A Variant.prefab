@@ -87,6 +87,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64b79a3c63dde70409ff11efdfd9f686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportPosition: {fileID: 0}
-  playerRigidbody: {fileID: 0}
   particleObj: {fileID: 0}
+  text: {fileID: 7212840021287893178}
+  message: You have dropped in box A.
+--- !u!114 &7212840021287893178 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 363705711699400265, guid: db6c5fcf38c0a8d4b8b94a7f85aeab53,
+    type: 3}
+  m_PrefabInstance: {fileID: 6995501591818825459}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
