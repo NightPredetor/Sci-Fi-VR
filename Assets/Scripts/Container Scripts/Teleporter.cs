@@ -7,7 +7,7 @@ public class Teleporter : ParticleSpawner
     #region Serialized Fields
     [Header("Teleporter References")]
     [SerializeField] GameObject canvasObj;
-    [SerializeField] Rigidbody playerRigidbody;
+    [SerializeField] Transform playerTransform;
 
     [Header("Teleporter Configurations")]
     [SerializeField] Transform teleportPosition;
@@ -32,7 +32,11 @@ public class Teleporter : ParticleSpawner
         yield return new WaitForSeconds(teleportDelay);
 
         canvasObj.SetActive(true);
-        playerRigidbody.MovePosition(teleportPosition.position);
+        playerTransform.position = teleportPosition.position;
+
+        // Apply Transform changes to the physics engine.
+        // As the player has "Teleported", its Rigidbody, Collider etc. needs to be updated based on its transform. 
+        Physics.SyncTransforms();
     }
     #endregion
 }
