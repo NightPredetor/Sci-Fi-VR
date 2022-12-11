@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2690021679729501737}
   - component: {fileID: 2690021679732229193}
   - component: {fileID: 2690021679727667245}
+  - component: {fileID: 1419000100962511004}
   m_Layer: 0
   m_Name: Soul Stone
   m_TagString: Soul Stone
@@ -115,6 +116,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1419000100962511004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2690021679727752061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdbcb5c6e66ef7f43b776cd2b09bc6ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textObj: {fileID: 2690021680188764913}
 --- !u!1 &2690021680188764913
 GameObject:
   m_ObjectHideFlags: 0

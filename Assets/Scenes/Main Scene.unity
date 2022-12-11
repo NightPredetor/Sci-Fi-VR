@@ -961,6 +961,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8179369974162642021, guid: ef5afae04a4dd074c881b2414fb40820,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef5afae04a4dd074c881b2414fb40820, type: 3}
 --- !u!1 &1074856706
@@ -3534,11 +3539,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: XR Origin
-      objectReference: {fileID: 0}
-    - target: {fileID: 3164485224818947881, guid: 47109416866c3184481ba3a2f1dddcf6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3164485224818947887, guid: 47109416866c3184481ba3a2f1dddcf6,
         type: 3}
