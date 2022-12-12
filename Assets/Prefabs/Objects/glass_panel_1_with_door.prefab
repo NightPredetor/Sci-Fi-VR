@@ -289,6 +289,7 @@ GameObject:
   - component: {fileID: 4574148498081000485}
   - component: {fileID: 4574148498092499819}
   - component: {fileID: 4574148498085169827}
+  - component: {fileID: 7095132472894338237}
   m_Layer: 0
   m_Name: glass_panel_1_with_door
   m_TagString: Untagged
@@ -401,6 +402,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 1d8fb1d801abb5741a1a870b2e3986dd, type: 3}
+--- !u!114 &7095132472894338237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4574148498083058577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e284230b3a27449b3f8b6e2c25bbb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4574148498083235871
 GameObject:
   m_ObjectHideFlags: 0
