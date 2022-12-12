@@ -10,6 +10,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 /// On equipping from the canvas, the stone will become grabbable.
 /// On being dropped inside Box C, the stone will not be grabbable anymore until re-equiped.
 /// </summary>
+[RequireComponent(typeof(XRGrabInteractable))]
 public class SoulStone : MonoBehaviour
 {
     public static Action OnGrabbable;
@@ -18,10 +19,19 @@ public class SoulStone : MonoBehaviour
     [SerializeField] GameObject canvasObj;
     #endregion
 
+    #region Private Variables
+    private XRGrabInteractable xrGrabInteractable;
+    #endregion
+
     #region MonoBehaviour
     void Start()
     {
         Teleporter.OnTeleport += OnTeleport;
+
+        xrGrabInteractable = GetComponent<XRGrabInteractable>();
+
+        xrGrabInteractable.enabled = false;
+        canvasObj.SetActive(false);
     }
 
     private void OnDestroy()
@@ -35,7 +45,7 @@ public class SoulStone : MonoBehaviour
         // already grabbable OR
         // the canvas is already on.
         if (collision.gameObject.CompareTag("Player") is false ||
-            TryGetComponent(out XRGrabInteractable _) ||
+            xrGrabInteractable.enabled ||
             canvasObj.activeInHierarchy)
         {
             return;
@@ -49,7 +59,7 @@ public class SoulStone : MonoBehaviour
     public void MakeGrabbable()
     {
         // Makes the object grabbable.
-        gameObject.AddComponent<XRGrabInteractable>();
+        xrGrabInteractable.enabled = true;
 
         OnGrabbable?.Invoke();
     }
@@ -60,7 +70,7 @@ public class SoulStone : MonoBehaviour
         canvasObj.SetActive(true);
 
         // Removes the object from being grabbable.
-        Destroy(gameObject.GetComponent<XRGrabInteractable>());
+        xrGrabInteractable.enabled = false;
     }
     #endregion
 }
