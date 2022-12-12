@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.020136334, g: 0.020126471, b: 0.02592618, a: 1}
+  m_IndirectSpecularColor: {r: 0.0063851518, g: 0.006588239, b: 0.0067436863, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4102,20 +4102,10 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 689025415}
-    - target: {fileID: 3164485224201093142, guid: 47109416866c3184481ba3a2f1dddcf6,
-        type: 3}
-      propertyPath: m_InteractionManager
-      value: 
-      objectReference: {fileID: 689025415}
     - target: {fileID: 3164485224818947881, guid: 47109416866c3184481ba3a2f1dddcf6,
         type: 3}
       propertyPath: m_Name
       value: XR Origin
-      objectReference: {fileID: 0}
-    - target: {fileID: 3164485224818947881, guid: 47109416866c3184481ba3a2f1dddcf6,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3164485224818947887, guid: 47109416866c3184481ba3a2f1dddcf6,
         type: 3}
