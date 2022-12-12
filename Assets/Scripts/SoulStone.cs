@@ -12,7 +12,6 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class SoulStone : MonoBehaviour
 {
     #region Serialized Fields
-    [SerializeField] GameObject textObj;
     [SerializeField] GameObject canvasObj;
     #endregion
 
@@ -30,22 +29,17 @@ public class SoulStone : MonoBehaviour
     #endregion
 
     #region Public Methods
-    public void HideText()
-    {
-        if (textObj)
-        {
-            textObj.SetActive(false);
-        }
-    }
-
     public void MakeGrabbable()
     {
         // Makes the object grabbable.
         gameObject.AddComponent<XRGrabInteractable>();
     }
 
-    public void RemoveGrabbable()
+    public void OnTeleport()
     {
+        // Toggles on the canvas.
+        canvasObj.SetActive(true);
+
         // Removes the object from being grabbable.
         Destroy(gameObject.GetComponent<XRGrabInteractable>());
     }

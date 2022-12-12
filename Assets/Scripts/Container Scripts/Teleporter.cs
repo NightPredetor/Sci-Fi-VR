@@ -6,12 +6,13 @@ public class Teleporter : ParticleSpawner
 {
     #region Serialized Fields
     [Header("Teleporter References")]
-    [SerializeField] GameObject canvasObj;
+    [SerializeField] SoulStone soulStone;
     [SerializeField] Transform playerTransform;
 
     [Header("Teleporter Configurations")]
-    [SerializeField] Transform teleportPosition;
     [SerializeField] float teleportDelay;
+    [SerializeField] Transform playerTeleportPosition;
+    [SerializeField] Transform soulStoneTeleportPosition;
     #endregion
 
     #region MonoBehaviour
@@ -31,11 +32,14 @@ public class Teleporter : ParticleSpawner
     {
         yield return new WaitForSeconds(teleportDelay);
 
-        canvasObj.SetActive(true);
-        playerTransform.position = teleportPosition.position;
+        soulStone.OnTeleport();
+
+        // Teleport.
+        playerTransform.position = playerTeleportPosition.position;
+        soulStone.gameObject.transform.position = soulStoneTeleportPosition.position;
 
         // Apply Transform changes to the physics engine.
-        // As the player has "Teleported", its Rigidbody, Collider etc. needs to be updated based on its transform. 
+        // As the player and stone have "Teleported", their Rigidbody, Collider etc. needs to be updated based on their transform. 
         Physics.SyncTransforms();
     }
     #endregion
