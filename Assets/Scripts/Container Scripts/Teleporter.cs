@@ -23,7 +23,7 @@ public class Teleporter : ParticleSpawner
     {
         if (other.CompareTag("Soul Stone"))
         {
-            ShowMessage();
+            OnBallDrop();
 
             StartCoroutine(Teleport());
         }

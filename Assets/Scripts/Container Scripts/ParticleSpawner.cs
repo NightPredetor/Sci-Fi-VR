@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+[RequireComponent(typeof(AudioSource))]
 public class ParticleSpawner : MonoBehaviour
 {
     #region Serialized Fields
@@ -14,12 +15,21 @@ public class ParticleSpawner : MonoBehaviour
     [SerializeField] protected string message;
     #endregion
 
+    #region Private Variables
+    private AudioSource audioSource;
+    #endregion
+
     #region MonoBehaviour
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Soul Stone"))
         {
-            ShowMessage();
+            OnBallDrop();
         }
     }
 
@@ -36,10 +46,12 @@ public class ParticleSpawner : MonoBehaviour
     /// <summary>
     /// Shows the confirmation that ball has been dropped successfully.
     /// </summary>
-    protected void ShowMessage()
+    protected void OnBallDrop()
     {
         particleObj.Play();
         text.text = message;
+
+        audioSource.Play();
     }
     #endregion
 }
