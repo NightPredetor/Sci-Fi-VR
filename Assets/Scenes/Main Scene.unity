@@ -2382,12 +2382,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1560727886}
   m_CullTransparentMesh: 1
---- !u!54 &1587745348 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 8179369974162642018, guid: ef5afae04a4dd074c881b2414fb40820,
-    type: 3}
-  m_PrefabInstance: {fileID: 1029238573}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1597803577
 GameObject:
   m_ObjectHideFlags: 0
@@ -3646,18 +3640,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2690021679727539883, guid: 9b822e2665abb9f4b9aabcd2f7554a5e,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2690021679727539883, guid: 9b822e2665abb9f4b9aabcd2f7554a5e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2690021679727539883, guid: 9b822e2665abb9f4b9aabcd2f7554a5e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2690021679727539883, guid: 9b822e2665abb9f4b9aabcd2f7554a5e,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.25
       objectReference: {fileID: 0}
     - target: {fileID: 2690021679727539883, guid: 9b822e2665abb9f4b9aabcd2f7554a5e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2
+      value: 1.356
       objectReference: {fileID: 0}
     - target: {fileID: 2690021679727539883, guid: 9b822e2665abb9f4b9aabcd2f7554a5e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.25
+      value: 9.48
       objectReference: {fileID: 0}
     - target: {fileID: 2690021679727539883, guid: 9b822e2665abb9f4b9aabcd2f7554a5e,
         type: 3}
@@ -3939,11 +3948,6 @@ PrefabInstance:
       propertyPath: canvasObj
       value: 
       objectReference: {fileID: 2073771057}
-    - target: {fileID: 3926970874402124403, guid: 7a2505f6dd7edc1429aec1461a2456f0,
-        type: 3}
-      propertyPath: playerRigidbody
-      value: 
-      objectReference: {fileID: 1587745348}
     - target: {fileID: 3926970874402124403, guid: 7a2505f6dd7edc1429aec1461a2456f0,
         type: 3}
       propertyPath: playerTransform
