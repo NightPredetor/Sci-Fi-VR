@@ -3979,6 +3979,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin
       objectReference: {fileID: 0}
+    - target: {fileID: 3164485224818947881, guid: 47109416866c3184481ba3a2f1dddcf6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 3164485224818947887, guid: 47109416866c3184481ba3a2f1dddcf6,
         type: 3}
       propertyPath: m_RootOrder
