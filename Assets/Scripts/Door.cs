@@ -11,16 +11,25 @@ public class Door : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+
+        SoulStone.OnGrabbable += OpenDoor;
+        Teleporter.OnTeleport += CloseDoor;
+    }
+
+    private void OnDestroy()
+    {
+        SoulStone.OnGrabbable -= OpenDoor;
+        Teleporter.OnTeleport -= CloseDoor;
     }
     #endregion
 
-    #region Public Methods
-    public void OpenDoor()
+    #region Private Methods
+    private void OpenDoor()
     {
         animator.SetTrigger("Open");
     }
 
-    public void CloseDoor()
+    private void CloseDoor()
     {
         animator.SetTrigger("Close");
     }

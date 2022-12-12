@@ -3950,6 +3950,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdbcb5c6e66ef7f43b776cd2b09bc6ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &2690021679401212494 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2690021679727539883, guid: 9b822e2665abb9f4b9aabcd2f7554a5e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2690021679401212492}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3164485225462720331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4066,6 +4072,11 @@ PrefabInstance:
       propertyPath: teleportPosition
       value: 
       objectReference: {fileID: 1604257438}
+    - target: {fileID: 3926970874402124403, guid: 7a2505f6dd7edc1429aec1461a2456f0,
+        type: 3}
+      propertyPath: soulStoneTransform
+      value: 
+      objectReference: {fileID: 2690021679401212494}
     - target: {fileID: 3926970874402124403, guid: 7a2505f6dd7edc1429aec1461a2456f0,
         type: 3}
       propertyPath: playerTeleportPosition

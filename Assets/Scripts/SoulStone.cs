@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,11 +12,23 @@ using UnityEngine.XR.Interaction.Toolkit;
 /// </summary>
 public class SoulStone : MonoBehaviour
 {
+    public static Action OnGrabbable;
+
     #region Serialized Fields
     [SerializeField] GameObject canvasObj;
     #endregion
 
     #region MonoBehaviour
+    void Start()
+    {
+        Teleporter.OnTeleport += OnTeleport;
+    }
+
+    private void OnDestroy()
+    {
+        Teleporter.OnTeleport -= OnTeleport;
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         // Return if grabbable OR the canvas is already on.
@@ -33,9 +46,11 @@ public class SoulStone : MonoBehaviour
     {
         // Makes the object grabbable.
         gameObject.AddComponent<XRGrabInteractable>();
+
+        OnGrabbable?.Invoke();
     }
 
-    public void OnTeleport()
+    private void OnTeleport()
     {
         // Toggles on the canvas.
         canvasObj.SetActive(true);
