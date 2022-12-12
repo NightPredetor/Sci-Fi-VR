@@ -80,6 +80,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasObj: {fileID: 0}
+  particleEffect: {fileID: 3774993467384918735}
 --- !u!114 &8167005947986085521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19547,7 +19548,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3774993467400124301
 Transform:
   m_ObjectHideFlags: 0

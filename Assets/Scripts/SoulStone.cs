@@ -17,6 +17,7 @@ public class SoulStone : MonoBehaviour
 
     #region Serialized Fields
     [SerializeField] GameObject canvasObj;
+    [SerializeField] ParticleSystem particleEffect;
     #endregion
 
     #region Private Variables
@@ -32,6 +33,7 @@ public class SoulStone : MonoBehaviour
 
         xrGrabInteractable.enabled = false;
         canvasObj.SetActive(false);
+        particleEffect.gameObject.SetActive(false);
     }
 
     private void OnDestroy()
@@ -61,6 +63,9 @@ public class SoulStone : MonoBehaviour
         // Makes the object grabbable.
         xrGrabInteractable.enabled = true;
 
+        particleEffect.gameObject.SetActive(true);
+        particleEffect.Play();
+
         OnGrabbable?.Invoke();
     }
 
@@ -68,6 +73,7 @@ public class SoulStone : MonoBehaviour
     {
         // Toggles on the canvas.
         canvasObj.SetActive(true);
+        particleEffect.gameObject.SetActive(false);
 
         // Removes the object from being grabbable.
         xrGrabInteractable.enabled = false;
