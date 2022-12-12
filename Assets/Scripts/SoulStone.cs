@@ -31,8 +31,12 @@ public class SoulStone : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        // Return if grabbable OR the canvas is already on.
-        if (TryGetComponent(out XRGrabInteractable _) || canvasObj.activeInHierarchy)
+        // Return if not collided with Player OR
+        // already grabbable OR
+        // the canvas is already on.
+        if (collision.gameObject.CompareTag("Player") is false ||
+            TryGetComponent(out XRGrabInteractable _) ||
+            canvasObj.activeInHierarchy)
         {
             return;
         }
