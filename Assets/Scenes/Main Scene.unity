@@ -4128,12 +4128,12 @@ PrefabInstance:
     - target: {fileID: 1007077801106140138, guid: 7a2505f6dd7edc1429aec1461a2456f0,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1007077801106282092, guid: 7a2505f6dd7edc1429aec1461a2456f0,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1341805389036816638, guid: 7a2505f6dd7edc1429aec1461a2456f0,
         type: 3}
@@ -4398,7 +4398,7 @@ PrefabInstance:
     - target: {fileID: 3081223292512015589, guid: 7a2505f6dd7edc1429aec1461a2456f0,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3190020519098555712, guid: 7a2505f6dd7edc1429aec1461a2456f0,
         type: 3}
@@ -4508,12 +4508,12 @@ PrefabInstance:
     - target: {fileID: 4155835680924927777, guid: 7a2505f6dd7edc1429aec1461a2456f0,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4155835680925113519, guid: 7a2505f6dd7edc1429aec1461a2456f0,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4155835681040872669, guid: 7a2505f6dd7edc1429aec1461a2456f0,
         type: 3}
@@ -4778,7 +4778,7 @@ PrefabInstance:
     - target: {fileID: 4805032267686272641, guid: 7a2505f6dd7edc1429aec1461a2456f0,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5623426512767999869, guid: 7a2505f6dd7edc1429aec1461a2456f0,
         type: 3}
@@ -5023,12 +5023,12 @@ PrefabInstance:
     - target: {fileID: 8519932879363732370, guid: 7a2505f6dd7edc1429aec1461a2456f0,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8519932879363804692, guid: 7a2505f6dd7edc1429aec1461a2456f0,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8560538272241916835, guid: 7a2505f6dd7edc1429aec1461a2456f0,
         type: 3}
