@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2690021679727667245}
   - component: {fileID: 1419000100962511004}
   - component: {fileID: 8167005947986085521}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Soul Stone
   m_TagString: Soul Stone
   m_Icon: {fileID: 0}
