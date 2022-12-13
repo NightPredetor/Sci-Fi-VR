@@ -1,7 +1,6 @@
 # Sci-Fi-VR
 
-**Soul Stone**
-
+**Soul Stone**/n
 The Soul Stone is the main object that allows a lot of functionality. By default the Soul Stone is not liftable. It has to be touched to bring the UI which will allow you to gain the power to lift it.
 It will come to life when its powers are unlocked.
 
